@@ -367,8 +367,9 @@ article .icon {
   text-align: initial;
   flex-wrap: wrap;
   flex-direction: row;
-  gap: 2.5rem;
+  gap: 2rem;
   justify-content: space-around;
+  /* height: 200px; */
 }
 
 article {
@@ -394,13 +395,14 @@ article .icon {
 }
 
 .project-img {
-  border-radius: 3rem;
-  width: 50%;
-  height: 50%;
+  border-radius: 2rem;
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
 }
 
 .project-title {
-  margin: 1rem;
+  margin: 3rem;
   color: black;
 }
 
