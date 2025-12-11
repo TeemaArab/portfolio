@@ -402,8 +402,14 @@ article .icon {
 }
 
 .project-title {
-  margin: 3rem;
+  margin: 3rem 0;
   color: black;
+
+   min-height: 4.5rem;    
+  display: flex;
+  align-items: center;    /* center text vertically in that space */
+  justify-content: center;/* center text horizontally */
+  text-align: center;
 }
 
 .project-btn {
