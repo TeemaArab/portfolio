@@ -59,7 +59,7 @@
   padding: 1.5rem;
    } 
 
-     article {
+     .article-container article {
           font-size: 1rem;
      }
 
@@ -67,9 +67,20 @@
           height: fit-content;
           margin-bottom: 2rem;
      }
-     .about-containers, .contact-info-upper-container, .btn-container{
-          flex-wrap: wrap;
-     }
+    
+     
+  .btn-container {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;  
+    gap: 0.75rem;
+  }
+
+  .project-btn {
+    width: 12rem;       
+  }
+
+
 
      .contact-info-container {
           margin:0;

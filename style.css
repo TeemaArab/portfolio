@@ -306,21 +306,23 @@ section{
     width:100%;
     margin:auto 0;
 }
-/* Experience Section */
+
+/* ---------------- EXPERIENCE SECTION ---------------- */
 #experience {
     margin-top: 5em;
-    position:relative;
+    position: relative;
 }
-.experience-sub-title{
+
+.experience-sub-title {
     color: rgb(85,85,85);
     font-weight: 600;
-    font-size:1.75rem;
-    margin-bottom: rem;
+    font-size: 1.75rem;
+    margin-bottom: 1rem;   /* 🔹 FIXED: previously 'rem;' */
 }
 
 .experience-details-container {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     flex-direction: column;
 }
 
@@ -333,16 +335,39 @@ section{
     justify-content: space-around;
 }
 
-article {
+/* 🔹 UPDATED: scoped rule for skill items inside article-container only  */
+.article-container article {
     display: flex;
-    width: 10rem;
-    justify-content: space-around;
-    gap: 0.5rem;
+    align-items: center;        /* Align icon + text vertically  */
+    width: 45%;                 /* Two per row cleanly aligned  */
+    min-width: 200px;           
+    justify-content: flex-start;
+    gap: 0.8rem;
 }
 
-article .icon {
+/* 🔹 FIXED: consistent icon sizing + alignment  */
+.article-container .icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
     cursor: default;
 }
+
+/* 🔹 CLEANED UP: consistent card look, removing the blue tint */
+.details-container {
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: 0.1rem solid rgb(163,163,163);
+    text-align: center;
+}
+
+.details-container .experience-sub-title {
+    color: rgb(85,85,85);
+}
+/* -------------- END OF EXPERIENCE SECTION -------------- */
+
 
 /* projects Section */
 #experience {
@@ -392,6 +417,12 @@ article .icon {
 .color-container {
   border-color: rgb(163, 163, 163);
   background: rgb(250, 250, 250);
+  display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.color-container .article-container {
+  flex-grow: 1;
 }
 
 .project-img {
@@ -456,6 +487,7 @@ article .icon {
 .email-icon {
   height: 2.5rem;
 }
+
 
 /* FOOTER SECTION */
 
