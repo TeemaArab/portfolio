@@ -46,8 +46,9 @@
 
 }
 
+
 @media screen and (max-width: 600px){
-     #contanct, footer {
+     #contact, footer {
           height: 40vh;
      }
      #profile {
@@ -69,17 +70,20 @@
      }
     
      
-  .btn-container {
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: nowrap;  
+ #projects .btn-container {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
     gap: 0.75rem;
   }
 
-  .project-btn {
-    width: 12rem;       
+  #projects .project-btn {
+    width: 12rem;
   }
 
+  #projects .about-containers {
+    grid-template-columns: 1fr;
+  }
 
 
      .contact-info-container {
