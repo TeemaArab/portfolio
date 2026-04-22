@@ -167,9 +167,10 @@ section{
     
 }
 .section__pic_container img {
-  width: 100%;
+  width: 80%;
   height: 100%;
   object-fit: cover;
+  object-position: top;
   border-radius: 80%; 
 }
 
@@ -408,48 +409,7 @@ article .icon {
   cursor: default;
 }
 
-/* PROJECTS SECTION */
-/* 
-#projects {
-  position: relative;
-}
-
-.color-container {
-  border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
-  display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.color-container .article-container {
-  flex-grow: 1;
-}
-
-.project-img {
-  border-radius: 2rem;
-  width: 10rem;
-  height: 10rem;
-  object-fit: cover;
-}
-
-.project-title {
-  margin: 3rem 0;
-  color: black;
-
-   min-height: 4.5rem;    
-  display: flex;
-  align-items: center;    /* center text vertically in that space */
-  /* justify-content: center;
-  text-align: center;
-}
-
-.project-btn {
-  color: black;
-  border-color: rgb(163, 163, 163);
-}  */
-
-/* ================= PROJECTS SECTION ================= */
-/* ================= PROJECTS SECTION ================= */
+/* Project Section */
 
 #projects {
   position: relative;
