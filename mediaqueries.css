@@ -1,5 +1,5 @@
 @media screen and (max-width: 1400px) {
-   profile {
+   #profile {
      height: 83vh;
      margin-bottom:6rem;
 
@@ -35,9 +35,9 @@
  section{
      margin:0.5%;
  }
- .section__pic_container{
-     height: 275px;
-     width: 275px;
+ #profile .section__pic_container{
+     width: clamp(220px, 45vw, 330px);
+     height: auto;
      margin: 0 auto 2rem
  }
  .about-containers {
@@ -104,9 +104,9 @@
           gap: 0.5rem;
           text-align: center;
      }
-     .section__pic_container {
-          height: 46vh;
-          width: auto;
+     #profile .section__pic_container {
+          width: clamp(200px, 68vw, 280px);
+          height: auto;
           justify-content:center;
      }
      .section__text_p2 {
